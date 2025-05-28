@@ -1,8 +1,7 @@
 from typing import Optional
-import boto3
-from app.infraestructure.db.dynamodb import get_dynamodb_resource
-from app.core.entities.user import User
-from app.interfaces.user_repository import IUserRepository
+from infraestructure.db.dynamodb import get_dynamodb_resource
+from core.entities.user import User
+from interfaces.user_repository import IUserRepository
 from datetime import datetime
 
 

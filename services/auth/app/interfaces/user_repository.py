@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Optional
-from app.core.entities.user import User
+from core.entities.user import User
 
 
 class IUserRepository(ABC):

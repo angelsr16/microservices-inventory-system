@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from dataclasses import asdict
-from app.core.entities.user import User
-from app.interfaces.user_repository import IUserRepository
+from core.entities.user import User
+from interfaces.user_repository import IUserRepository
 
 
 class UserService:
@@ -29,5 +29,4 @@ class UserService:
         user = self.repo.get_by_username(username)
         if not user or not verifier(password, user.password_hash):
             raise ValueError("Invalid credentials")
-        print(user)
         return self.create_token(asdict(user))
