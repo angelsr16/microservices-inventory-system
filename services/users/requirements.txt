@@ -1,0 +1,6 @@
+uvicorn
+
+fastapi
+boto3
+dotenv
+mangum
